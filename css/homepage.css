@@ -11,6 +11,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     color: var(--ternary-color);
+    z-index: 100;
 }
 
 .navbar-icon-btn{
@@ -63,8 +64,18 @@ body{
     overflow: scroll;
 }
 
+.category-link{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
 .category-item{
     padding: 8px 2rem;
+}
+
+.category-item:hover{
+    transition: all 0.3s ease-out;
+    margin-top: 8px;
 }
 
 .category-item img{
