@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>spacTrend - Product List</title>
+</head>
+<body>
+    <div class="navbar-section flex-row">
+        <div class="navbar-brand">
+            <span>spacTrend</span> 
+        </div>
+        <div class="search flex-row">
+            <input type="text" class="search-input" placeholder="search for Product, Brand and more">
+            <button class="navbar-icon-btn search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="navbar-actions flex-row">
+            <button class="navbar-icon-btn"><i class="fas fa-bell"></i></button>
+            <button class="navbar-icon-btn"><i class="far fa-heart"></i></button>
+            <button class="navbar-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="categories-section flex-row">
+        <a href="https://spactrend.netlify.app/product-list.html" class="category-link"><div class="category-item flex-column"><img src="asset/fashion.png" alt="Category links"> <h4>Category1</h4></div></a>
+        <a href="https://spactrend.netlify.app/product-list.html" class="category-link"><div class="category-item flex-column"><img src="asset/fashion.png" alt="Category links"> <h4>Category2</h4></div></a>
+        <a href="https://spactrend.netlify.app/product-list.html" class="category-link"><div class="category-item flex-column"><img src="asset/fashion.png" alt="Category links"> <h4>Category3</h4></div></a>
+        <a href="https://spactrend.netlify.app/product-list.html" class="category-link"><div class="category-item flex-column"><img src="asset/fashion.png" alt="Category links"> <h4>Category4</h4></div></a>
+        <a href="https://spactrend.netlify.app/product-list.html" class="category-link"><div class="category-item flex-column"><img src="asset/fashion.png" alt="Category links"> <h4>Category5</h4></div></a>
+        <a href="https://spactrend.netlify.app/product-list.html" class="category-link"><div class="category-item flex-column"><img src="asset/fashion.png" alt="Category links"> <h4>Category6</h4></div></a>
+        <a href="https://spactrend.netlify.app/product-list.html" class="category-link"><div class="category-item flex-column"><img src="asset/fashion.png" alt="Category links"> <h4>Category7</h4></div></a>
+    </div>
+
+    <div class="product-listing-section flex-row">
+    <div class="filter-section">
+        <h3>Filters</h3>
+        <div class="price-filter">
+            <h3>Price</h3>
+            <div class="slidecontainer">
+                <input type="range" min="100" max="10000" step="100" value="50" class="slider" id="myRange">
+                <p>Price range: 0 to  <span id="demo"></span></p>
+            </div>
+        </div>
+        <div class="category-filter">
+            <h3>Category</h3>
+            <label class="category-input-container">
+                <input type="checkbox" checked="checked" class="category-input">
+                <span class="category-input-label">T-shirt</span>
+            </label>
+            <label class="category-input-container">
+                <input type="checkbox" class="category-input">
+                <span class="category-input-label">Shirt</span>
+            </label>
+        </div>
+        <div class="rating-filter">
+            <h3>Rating</h3>
+            <label class="category-input-container">
+                <input type="radio" checked="checked" class="category-input">
+                <span class="category-input-label">5 Stars only</span>
+            </label>
+            <label class="category-input-container">
+                <input type="radio" class="category-input">
+                <span class="category-input-label">4 Starts & above</span>
+            </label>
+            <label class="category-input-container">
+                <input type="radio" class="category-input">
+                <span class="category-input-label">3 Stars & above</span>
+            </label>
+        </div>
+        <div class="sortby-price-filter">
+            <h3>Sort by price</h3>
+            <label class="category-input-container">
+                <input type="radio" checked="checked" class="category-input">
+                <span class="category-input-label">Low to high</span>
+            </label>
+            <label class="category-input-container">
+                <input type="radio" class="category-input">
+                <span class="category-input-label">High to low</span>
+            </label>
+        </div>
+    </div>
+
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+        </script>
+
+    <div class="products-section flex-row">
+        <div class="ecom-card vertical-card">
+            <div class="ecom-card-img">
+                <img src="asset/product1-spacTrend.webp" alt="Product image">
+            </div>
+            <div class="ecom-details">
+                <div class="ecom-card-details">
+                    <div>
+                        <h2 class="ecom-card-title">Roadster</h2>
+                        <h4 class="ecom-card-subtitle">Men Printed Pullover</h4>
+                    </div>
+                    <div class="product-prices">
+                        <div>
+                            <h4 class="final-price">Rs. 999</h4>
+                            <h4 class="original-price">Rs. 999</h4>
+                        </div>
+                        <h4 class="product-discount">( 50% OFF )</h4>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="card-action-buttons">
+                        <button class="btn text-button">Add to cart</button>
+                    </div>
+                    <div class="card-action-icons">
+                        <button class="btn icon-button" title="Add to favorites"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>                
+        </div>
+
+        <div class="ecom-card vertical-card">
+            <div class="ecom-card-img">
+                <img src="asset/product2-spacTrend.webp" alt="Product image">
+            </div>
+            <div class="ecom-details">
+                <div class="ecom-card-details">
+                    <div>
+                        <h2 class="ecom-card-title">Roadster</h2>
+                        <h4 class="ecom-card-subtitle">Men Printed Pullover</h4>
+                    </div>
+                    <div class="product-prices">
+                        <div>
+                            <h4 class="final-price">Rs. 999</h4>
+                            <h4 class="original-price">Rs. 999</h4>
+                        </div>
+                        <h4 class="product-discount">( 50% OFF )</h4>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="card-action-buttons">
+                        <button class="btn text-button">Add to cart</button>
+                    </div>
+                    <div class="card-action-icons">
+                        <button class="btn icon-button" title="Add to favorites"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>                
+        </div>
+
+        <div class="ecom-card vertical-card">
+            <div class="ecom-card-img">
+                <img src="asset/product3-spacTrend.webp" alt="Product image">
+            </div>
+            <div class="ecom-details">
+                <div class="ecom-card-details">
+                    <div>
+                        <h2 class="ecom-card-title">Roadster</h2>
+                        <h4 class="ecom-card-subtitle">Men Printed Pullover</h4>
+                    </div>
+                    <div class="product-prices">
+                        <div>
+                            <h4 class="final-price">Rs. 999</h4>
+                            <h4 class="original-price">Rs. 999</h4>
+                        </div>
+                        <h4 class="product-discount">( 50% OFF )</h4>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="card-action-buttons">
+                        <button class="btn text-button">Add to cart</button>
+                    </div>
+                    <div class="card-action-icons">
+                        <button class="btn icon-button" title="Add to favorites"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>                
+        </div>
+
+        <div class="ecom-card vertical-card">
+            <div class="ecom-card-img">
+                <img src="asset/product4-spacTrend.webp" alt="Product image">
+            </div>
+            <div class="ecom-details">
+                <div class="ecom-card-details">
+                    <div>
+                        <h2 class="ecom-card-title">Roadster</h2>
+                        <h4 class="ecom-card-subtitle">Men Printed Pullover</h4>
+                    </div>
+                    <div class="product-prices">
+                        <div>
+                            <h4 class="final-price">Rs. 999</h4>
+                            <h4 class="original-price">Rs. 999</h4>
+                        </div>
+                        <h4 class="product-discount">( 50% OFF )</h4>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="card-action-buttons">
+                        <button class="btn text-button">Add to cart</button>
+                    </div>
+                    <div class="card-action-icons">
+                        <button class="btn icon-button" title="Add to favorites"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>                
+        </div>
+
+        <div class="ecom-card vertical-card">
+            <div class="ecom-card-img">
+                <img src="asset/product1-spacTrend.webp" alt="Product image">
+            </div>
+            <div class="ecom-details">
+                <div class="ecom-card-details">
+                    <div>
+                        <h2 class="ecom-card-title">Roadster</h2>
+                        <h4 class="ecom-card-subtitle">Men Printed Pullover</h4>
+                    </div>
+                    <div class="product-prices">
+                        <div>
+                            <h4 class="final-price">Rs. 999</h4>
+                            <h4 class="original-price">Rs. 999</h4>
+                        </div>
+                        <h4 class="product-discount">( 50% OFF )</h4>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="card-action-buttons">
+                        <button class="btn text-button">Add to cart</button>
+                    </div>
+                    <div class="card-action-icons">
+                        <button class="btn icon-button" title="Add to favorites"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>                
+        </div>
+
+        <div class="ecom-card vertical-card">
+            <div class="ecom-card-img">
+                <img src="asset/product2-spacTrend.webp" alt="Product image">
+            </div>
+            <div class="ecom-details">
+                <div class="ecom-card-details">
+                    <div>
+                        <h2 class="ecom-card-title">Roadster</h2>
+                        <h4 class="ecom-card-subtitle">Men Printed Pullover</h4>
+                    </div>
+                    <div class="product-prices">
+                        <div>
+                            <h4 class="final-price">Rs. 999</h4>
+                            <h4 class="original-price">Rs. 999</h4>
+                        </div>
+                        <h4 class="product-discount">( 50% OFF )</h4>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="card-action-buttons">
+                        <button class="btn text-button">Add to cart</button>
+                    </div>
+                    <div class="card-action-icons">
+                        <button class="btn icon-button" title="Add to favorites"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>                
+        </div>
+
+        <div class="ecom-card vertical-card">
+            <div class="ecom-card-img">
+                <img src="asset/product3-spacTrend.webp" alt="Product image">
+            </div>
+            <div class="ecom-details">
+                <div class="ecom-card-details">
+                    <div>
+                        <h2 class="ecom-card-title">Roadster</h2>
+                        <h4 class="ecom-card-subtitle">Men Printed Pullover</h4>
+                    </div>
+                    <div class="product-prices">
+                        <div>
+                            <h4 class="final-price">Rs. 999</h4>
+                            <h4 class="original-price">Rs. 999</h4>
+                        </div>
+                        <h4 class="product-discount">( 50% OFF )</h4>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="card-action-buttons">
+                        <button class="btn text-button">Add to cart</button>
+                    </div>
+                    <div class="card-action-icons">
+                        <button class="btn icon-button" title="Add to favorites"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>                
+        </div>
+
+        <div class="ecom-card vertical-card">
+            <div class="ecom-card-img">
+                <img src="asset/product4-spacTrend.webp" alt="Product image">
+            </div>
+            <div class="ecom-details">
+                <div class="ecom-card-details">
+                    <div>
+                        <h2 class="ecom-card-title">Roadster</h2>
+                        <h4 class="ecom-card-subtitle">Men Printed Pullover</h4>
+                    </div>
+                    <div class="product-prices">
+                        <div>
+                            <h4 class="final-price">Rs. 999</h4>
+                            <h4 class="original-price">Rs. 999</h4>
+                        </div>
+                        <h4 class="product-discount">( 50% OFF )</h4>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="card-action-buttons">
+                        <button class="btn text-button">Add to cart</button>
+                    </div>
+                    <div class="card-action-icons">
+                        <button class="btn icon-button" title="Add to favorites"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>                
+        </div>
+    </div>
+    </div>
+</body>
+</html>
