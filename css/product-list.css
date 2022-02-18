@@ -89,11 +89,6 @@ input[type=radio] {
     margin-left: 0;
 }
 
-.ecom-card:hover{
-    transition: all 0.3s ease-out;
-    margin-top: 8px;
-}
-
 .vertical-card{
     width: 14rem;
 }
