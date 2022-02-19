@@ -4,7 +4,7 @@
 }
 
 .login-container{
-    width: 90vw;
+    width: 100vw;
     max-width: 25rem;
     padding: 2rem 3rem;
     border-radius: 1rem;
@@ -62,7 +62,7 @@
 
 
 
-@media all and (max-width: 600px) { 
+@media all and (max-width: 576px) { 
     .login-container{
         padding: 1rem 2rem;
     }

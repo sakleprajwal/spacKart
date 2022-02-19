@@ -108,3 +108,17 @@ input[type=radio] {
 .text-button{
     color: var(--ternary-color);
 }
+
+
+
+@media all and (max-width: 576px){
+    .filter-section{
+        display: none;
+    }
+
+    .product-list{
+        width: 49%;
+        margin: 0;
+        border-radius: 0;
+    }
+}
