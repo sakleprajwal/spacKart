@@ -1,7 +1,11 @@
 .cart-section{
-    width: 90vw;
+    width: 100vw;
     margin: 0 auto;
     max-width: 60rem;
+}
+
+.product-prices{
+    flex-wrap: wrap;
 }
 
 .cart-item{
@@ -55,7 +59,7 @@
 
 
 
-@media all and (max-width: 600px) { 
+@media all and (max-width: 576px) { 
     .cart-section{
         flex-wrap: wrap;
     }
